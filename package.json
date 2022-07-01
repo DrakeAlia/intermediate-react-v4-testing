@@ -25,6 +25,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "jest": "^27.5.1",
+    "jest-fetch-mock": "^3.0.3",
     "parcel": "2.2.1",
     "prettier": "2.5.1"
   },
@@ -35,5 +36,9 @@
   },
   "browserslist": [
     "last 2 Chrome versions"
-  ]
+  ],
+  "jest": {
+    "automock": false,
+    "setupFiles": ["./src/setupJest.js"]
+  }
 }
