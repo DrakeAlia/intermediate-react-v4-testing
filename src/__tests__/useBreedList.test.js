@@ -40,3 +40,9 @@ test("gives back breeds with an animal", async () => {
     expect(status).toBe("loaded");
     expect(breedList).toEqual(breeds);
 });
+
+
+// Testing custom hooks is a bit of a trick because they 
+// are inherently tied to the internal workings of React: 
+// they can't be called outside of a component. So how we 
+// do we get around that? We fake a component!
